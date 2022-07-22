@@ -1,0 +1,165 @@
+.header {
+    margin: 20px;
+}
+
+.header--icon {
+    color: var(--brand-color);
+    font-size: 3rem;
+}
+
+.header--icon__white {
+    color: white;
+    font-size: 20rem;
+}
+
+.main--titles {
+    margin: 20px;
+    font-weight: 700;
+    width: 80%;
+    max-width: 300px;
+}
+
+h1.titles--title {
+    font-size: 3.4rem;
+    margin-bottom: 15px;
+}
+
+.main--buttons {
+    width: 80%;
+    min-width: 300px;
+}
+
+.main--hero {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main--button {
+    padding: 10px;
+    bottom: 0;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    margin: 10px 0;
+    width: 100%;
+    height: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.main--button__white {
+    border: 1px solid var(--gray-color);
+    background: white;
+}
+
+.main--button__blue {
+    background-color: var(--brand-color);
+    color: white;
+}
+
+.main--button__white-blue {
+    color: var(--brand-color);
+}
+
+.main--division {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.main--division div {
+    width: 45%;
+    border-top: 1px solid var(--gray-color);
+}
+
+.main--text {
+    font-size: 1rem;
+    margin: 5px 0px 20px;
+    text-align: center;
+}
+
+.text--link {
+    color: var(--brand-color);
+}
+
+.main--background {
+    width: 100%;
+    height: 70vh;
+    background-image: url('https://abs.twimg.com/sticky/illustrations/lohp_850x623.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.4rem;
+    position: relative;
+    top: 2px;
+}
+
+.footer--list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer--list li {
+    margin: 5px 10px;
+}
+
+.footer--list li a {
+    color: rgb(151, 144, 144);
+}
+
+@media screen and (min-width: 1024px) {
+    .helper {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100vw;
+        height: 90vh;
+        position: absolute;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        position: absolute;
+    }
+
+    .main--button {
+        display: block;
+        width: 300px;
+        margin: 15px 0;
+    }
+
+    .main--division div {
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .main--text {
+        width: 300px;
+    }
+
+    .helper--content, .main--background {
+        width: 50%;
+        height: 100%;
+    }
+
+    h1.titles--title {
+        font-size: 5rem;
+    }
+
+    .footer {
+        height: 10vh;
+        position: relative;
+        top: 742px;
+    }
+}

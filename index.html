@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./src/css/modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3ef9a7cfc0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/index.css">
+</head>
+<body>
+    <div class="helper">
+        <div class="helper--content">
+            <header class="header">
+                <span class="header--icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </span>
+            </header>
+        
+            <main class="main">
+                <div class="main--hero">
+                    <div class="main--titles">
+                        <h1 class="titles--title">
+                            Lo que está pasando ahora
+                        </h1>
+        
+                    </div>
+                    
+                    <div class="main--buttons">
+                        <h2 class="titles--title">
+                            Únete a Twitter hoy mismo.
+                        </h2>
+                        <button class="main--button main--button__white"> 
+                            <span>
+                                <i class="fa-brands fa-google"></i>
+                            </span> 
+                            Registrarse con Google 
+                        </button>
+        
+                        <button class="main--button main--button__white"> 
+                            <span>
+                                <i class="fa-brands fa-apple"></i>
+                            </span> 
+                            Registrarse con Apple
+                        </button>
+        
+                        <div class="main--division">
+                            <div></div>
+                            <span>o</span>
+                            <div></div>
+                        </div>
+        
+                        <button class="main--button main--button__blue" id="phone-register">
+                            Registrate con el numero de télefono
+                        </button>
+        
+                        <p class="main--text">Al registrarte, aceptas los
+                            <a class="text--link" href="#">Términos de servicio</a>
+                            y la
+                             <a class="text--link" href="#">Política de privacidad</a>, 
+                             incluida la
+                            <a class="text--link" href="#">política de Uso de Cookies.</a>
+                        </p>
+                        <h3>¿Ya tienes cuenta?</h3>
+                        <button 
+                        class="main--button main--button__white
+                        main--button__white-blue">
+                            Iniciar sesión
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="main--background">
+                    <span class="header--icon header--icon__white">
+                        <i class="fa-brands fa-twitter"></i>
+                    </span>
+                </div>
+    </div>
+
+    </main>
+    <footer class="footer">
+        <ul class="footer--list">
+            <li><a href="">Acerca de</a></li>
+            <li><a href="">Centro de ayuda</a></li>
+            <li><a href="">Condiciones de servicio</a></li>
+            <li><a href="">Guía</a></li>
+            <li><a href="">Desarrolladores</a></li>
+            <li><a href="">Publicidad</a></li>
+            <li><a href="">Marketing</a></li>
+        </ul>
+    </footer>
+    <!-- MODAL SECTION -->
+    <div class="modal--register hidden">
+        <div class="modal--text">
+            <span class="close-button"><i class="fa-solid fa-xmark"></i></span>
+            <p>Paso 1 de 5</p>
+        </div>
+        <div class="modal--inputs">
+            <h1>Crea tu cuenta</h1>
+            <input type="text" placeholder=" Nombre">
+            <input type="number" placeholder=" Telefono">
+            <a href="">Usar correo</a>
+            <h5>Fecha de nacimiento</h5>
+            <p>Esta información no será pública. Confirma tu propia edad, incluso si esta cuenta es para una empresa, una mascota u otra cosa.</p>
+            <input type="date">
+            <button class="modal--button">Siguiente</button>
+        </div>
+    </div>
+
+    <script src="./src/js/register.js"></script>
+</body>
+</html>
